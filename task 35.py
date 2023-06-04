@@ -8,10 +8,12 @@
 
 def Chek(number):
     for i in range(2,number):
-        if number%i==0:
-            return(f"Output: No")
-    
-        return(f"Output: Yes")    
+        if number%i<=0:   
+         print("\033[31m\0")
+         return(f"Output: No") 
+        print("\033[32m\0") 
+    return(f"Output: Yes") 
+print("\033[33m\0") 
 number=int(input("Input: "))
 res=Chek(number)
 print(res)   
